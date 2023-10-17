@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabla de Multiplicar</title>
+
+    <link rel="stylesheet" href="src/css/estilos.css" />
+
+    <!--Boostrap-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <a class="ir-arriba"><i class="fas fa-arrow-up"></i></a>
+    <div>
+      <h2>Tablas de Multiplicar</h2>
+    </div>
+    <div class="container-sm bg-light">
+      <label for="cbxNum">Mostrar tabla del:</label>
+      <select name="cbxNum" class="form-select" id="cbxNum">
+        <option value="" selected disabled hidden>Seleccione</option>
+        <!-- Agregado con JS -->
+      </select>
+    </div>
+    <div class="divContraido">
+      <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+          <th>Item</th>
+          <th>Operador</th>
+          <th>Item2</th>
+          <th></th>
+          <th>Resultado</th>
+        </thead>
+        <tbody id="filas"></tbody>
+      </table>
+      
+      <button type="button" class="btn btn-primary btnEstilo" id="more">
+        <i class="fas fa-plus"></i> Mostrar más
+      </button>
+      <button type="button" class="btn btn-danger" id="resetButton">
+        <i class="fas fa-trash"></i> Reiniciar
+      </button>
+    </div>
+
+    <div class="desarrollado-por">Desarrollado por Orlo</div>
+
+    <footer>
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+      <script src="src/js/script.js"></script>
+    </footer>
+  </body>
+</html>
